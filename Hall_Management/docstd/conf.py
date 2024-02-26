@@ -11,7 +11,6 @@ project = 'Hall Management System - Student'
 copyright = '2024, Afzal Hossain Babor'
 author = 'Afzal Hossain Babor'
 release = '3.9.2'
-
 extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
