@@ -26,7 +26,6 @@ class Student(models.Model):
     Model representing a student.
 
     A student is a person enrolled in a particular session, hall, and room.
-
     Attributes:
         studentId (int): The unique identifier for the student.
         name (str): The name of the student.

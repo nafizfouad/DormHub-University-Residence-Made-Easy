@@ -42,13 +42,11 @@ class StaffModelTests(TestCase):
         staff = Staff.objects.create(email="test@example.com", name="John Doe", username="johndoe", password="password",
                                      hall=hall)
 
-        # Assert expected values
         self.assertEqual(staff.email, "test@example.com")
         self.assertEqual(staff.name, "John Doe")
         self.assertEqual(staff.username, "johndoe")
         self.assertEqual(staff.password, "password")
         self.assertEqual(staff.hall, hall)
-
     def test_unique_email(self):
         """
         Test the uniqueness of the email field.
