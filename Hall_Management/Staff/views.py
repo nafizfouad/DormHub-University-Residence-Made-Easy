@@ -1,3 +1,8 @@
+"""
+Django views Configuration Documentation
+
+This module defines various controller files
+"""
 import datetime
 
 from Student.models import *

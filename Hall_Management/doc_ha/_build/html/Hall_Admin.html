@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hall_Admin package &mdash; Hall Management System - Hall Admin 3.6.4 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=8d42388d"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Hall Management System - Hall Admin
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Hall_Admin package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-Hall_Admin.admin">Hall_Admin.admin module</a></li>
+<li><a class="reference internal" href="#module-Hall_Admin.apps">Hall_Admin.apps module</a><ul>
+<li><a class="reference internal" href="#Hall_Admin.apps.HallAdminConfig"><code class="docutils literal notranslate"><span class="pre">HallAdminConfig</span></code></a><ul>
+<li><a class="reference internal" href="#Hall_Admin.apps.HallAdminConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">HallAdminConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.apps.HallAdminConfig.name"><code class="docutils literal notranslate"><span class="pre">HallAdminConfig.name</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">HallAdminConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">HallAdminConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Hall_Admin.models">Hall_Admin.models module</a><ul>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin"><code class="docutils literal notranslate"><span class="pre">HallAdmin</span></code></a><ul>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.adminId"><code class="docutils literal notranslate"><span class="pre">HallAdmin.adminId</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.name"><code class="docutils literal notranslate"><span class="pre">HallAdmin.name</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.email"><code class="docutils literal notranslate"><span class="pre">HallAdmin.email</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.username"><code class="docutils literal notranslate"><span class="pre">HallAdmin.username</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.password"><code class="docutils literal notranslate"><span class="pre">HallAdmin.password</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">HallAdmin.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">HallAdmin.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">HallAdmin.adminId</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">HallAdmin.email</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.hall_set"><code class="docutils literal notranslate"><span class="pre">HallAdmin.hall_set</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.id"><code class="docutils literal notranslate"><span class="pre">HallAdmin.id</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">HallAdmin.name</span></code></a></li>
+<li><a class="reference internal" href="#Hall_Admin.models.HallAdmin.objects"><code class="docutils literal notranslate"><span class="pre">HallAdmin.objects</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">HallAdmin.password</span></code></a></li>
+<li><a class="reference internal" href="#id6"><code class="docutils literal notranslate"><span class="pre">HallAdmin.username</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Hall_Admin.urls">Hall_Admin.urls module</a></li>
+<li><a class="reference internal" href="#module-Hall_Admin.views">Hall_Admin.views module</a><ul>
+<li><a class="reference internal" href="#Hall_Admin.views.hallAdmin"><code class="docutils literal notranslate"><span class="pre">hallAdmin()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Hall_Admin">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hall Management System - Hall Admin</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Hall_Admin package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Hall_Admin.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hall-admin-package">
+<h1>Hall_Admin package<a class="headerlink" href="#hall-admin-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-Hall_Admin.admin">
+<span id="hall-admin-admin-module"></span><h2>Hall_Admin.admin module<a class="headerlink" href="#module-Hall_Admin.admin" title="Permalink to this heading"></a></h2>
+<p>Django Admin Registration</p>
+<p>This module provides registration of models in the Django admin site.</p>
+</section>
+<section id="module-Hall_Admin.apps">
+<span id="hall-admin-apps-module"></span><h2>Hall_Admin.apps module<a class="headerlink" href="#module-Hall_Admin.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Hall_Admin.apps.HallAdminConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Hall_Admin.apps.</span></span><span class="sig-name descname"><span class="pre">HallAdminConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Hall_Admin/apps.html#HallAdminConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Hall_Admin.apps.HallAdminConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<p>AppConfig class for configuring the Hall_Admin app.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.apps.HallAdminConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><a class="headerlink" href="#Hall_Admin.apps.HallAdminConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd><p>The name of the field to use for automatic primary key incrementation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.apps.HallAdminConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#Hall_Admin.apps.HallAdminConfig.name" title="Permalink to this definition"></a></dt>
+<dd><p>The name of the app.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#id0" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id1">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Hall_Admin'</span></em><a class="headerlink" href="#id1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Hall_Admin.models">
+<span id="hall-admin-models-module"></span><h2>Hall_Admin.models module<a class="headerlink" href="#module-Hall_Admin.models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Hall_Admin.models.</span></span><span class="sig-name descname"><span class="pre">HallAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Hall_Admin/models.html#HallAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Hall_Admin.models.HallAdmin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Model representing a Hall Admin.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.adminId">
+<span class="sig-name descname"><span class="pre">adminId</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.adminId" title="Permalink to this definition"></a></dt>
+<dd><p>The unique identifier for the hall admin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.name" title="Permalink to this definition"></a></dt>
+<dd><p>The name of the hall admin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.email" title="Permalink to this definition"></a></dt>
+<dd><p>The email address of the hall admin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.username" title="Permalink to this definition"></a></dt>
+<dd><p>The username of the hall admin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.password" title="Permalink to this definition"></a></dt>
+<dd><p>The password of the hall admin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">adminId</span></span><a class="headerlink" href="#id2" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id3">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#id3" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.hall_set">
+<span class="sig-name descname"><span class="pre">hall_set</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.hall_set" title="Permalink to this definition"></a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#Hall_Admin.models.HallAdmin.id" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id4">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#id4" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Hall_Admin.models.HallAdmin.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#Hall_Admin.models.HallAdmin.objects" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id5">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#id5" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id6">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#id6" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Hall_Admin.urls">
+<span id="hall-admin-urls-module"></span><h2>Hall_Admin.urls module<a class="headerlink" href="#module-Hall_Admin.urls" title="Permalink to this heading"></a></h2>
+<p>Django URL Configuration Documentation</p>
+<p>This module defines URL patterns for various views and static/media file serving during development.</p>
+</section>
+<section id="module-Hall_Admin.views">
+<span id="hall-admin-views-module"></span><h2>Hall_Admin.views module<a class="headerlink" href="#module-Hall_Admin.views" title="Permalink to this heading"></a></h2>
+<p>Django views Configuration Documentation</p>
+<p>This module defines various controller files</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="Hall_Admin.views.hallAdmin">
+<span class="sig-prename descclassname"><span class="pre">Hall_Admin.views.</span></span><span class="sig-name descname"><span class="pre">hallAdmin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Hall_Admin/views.html#hallAdmin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Hall_Admin.views.hallAdmin" title="Permalink to this definition"></a></dt>
+<dd><p>View function to handle the hall admin view.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – The HTTP request object.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The HTTP response object rendering the hall admin template.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-Hall_Admin">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Hall_Admin" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Omar Faruk Hridoy.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

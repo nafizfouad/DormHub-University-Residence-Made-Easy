@@ -1,3 +1,9 @@
+"""
+Django Admin Registration
+
+This module provides registration of models in the Django admin site.
+"""
+
 # Import the admin module from django.contrib
 from django.contrib import admin
 

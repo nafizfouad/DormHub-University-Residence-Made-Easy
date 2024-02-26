@@ -1,13 +1,13 @@
-from django.urls import path
-from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import path
+
 from . import views
 
 urlpatterns = [
     # URL pattern for the Provost dashboard
     path('', views.provost, name='provost'),
-    path('swapRequests/',views.swapRequests,name='swapRequests'),
+    path('swapRequests/', views.swapRequests, name='swapRequests'),
     # URL pattern for adding a student
     path('addStudent/', views.addStudent, name='addStudent'),
 ]

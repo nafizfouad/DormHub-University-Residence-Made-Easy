@@ -1,11 +1,24 @@
-from django.shortcuts import render, redirect
+"""
+Django views Configuration Documentation
+
+This module defines various controller files
+"""
 from Hall_Admin.models import *
 from Varsity_Admin.models import *
+from django.shortcuts import render, redirect
 
 
-# Function to handle the hall admin view
 def hallAdmin(request):
-    # Get the hall admin and associated hall
+    """
+    View function to handle the hall admin view.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The HTTP response object rendering the hall admin template.
+    """
+    # Retrieve the hall admin and associated hall using the provided HTTP request object.
     admin = HallAdmin.objects.get(email=request.user.email)
     hall = Hall.objects.get(hallAdmin=admin)
 
