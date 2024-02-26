@@ -22,13 +22,17 @@ def student(request):
     Returns:
         HttpResponse: The HTTP response object rendering the student template.
     """
+     # Fetch the student object based on the email associated with the current user
     student = Student.objects.get(email=request.user.email)
+    # Fetch the hall object associated with the student
     hall = Hall.objects.get(hallId=student.hall.hallId)
+    # Extract the room ID of the student
     room = student.room.roomId
     requests = RepairRequest.objects.filter(student=student, hall=hall)
-
+    # Check if the 'change' action is triggered via POST request
     if 'change' in request.POST:
         ifPresent = SwapRequest.objects.filter(hall=hall, student=student)
+        # If no swap request exists, create a new one
         if not ifPresent:
             createRequest = SwapRequest(
                 hall=hall,
@@ -45,7 +49,7 @@ def student(request):
             createRequest.noOfRequests += 1
             createRequest.save()
         return redirect('/student')
-
+    # Check if the 'repair' action is triggered via POST request
     if 'repair' in request.POST:
         requestId = len(RepairRequest.objects.filter()) + 1
         createRequest = RepairRequest(
