@@ -5,12 +5,18 @@ This module contains tests for the Staff and Visitor models. These tests ensure 
 of the models under various scenarios.
 """
 
+import datetime
+
+from Hall_Admin.models import HallAdmin
+from Varsity_Admin.models import *
 from django.db import IntegrityError
 from django.test import TestCase
-from Hall_Admin.models import HallAdmin 
 from Varsity_Admin.models import *
-from Staff.models import Staff, Visitor  # Update path based on model location
-import datetime
+from Provost.models import *
+from Student.models import *
+from Staff.models import *
+from Hall_Admin.models import *
+  # Update path based on model location
 
 
 class StaffModelTests(TestCase):

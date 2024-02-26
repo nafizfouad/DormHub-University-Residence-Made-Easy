@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.test import TestCase
 from Varsity_Admin.models import *
 from Student.models import *
@@ -41,3 +42,5 @@ class StudentModelTestCase(TestCase):
         self.student.delete()
         student_count_after_delete = Student.objects.count()
         self.assertEqual(student_count_before_delete - 1, student_count_after_delete)
+=======
+>>>>>>> a5c01e8facda6897d8ae2bae0a74a73a1b3462ce
