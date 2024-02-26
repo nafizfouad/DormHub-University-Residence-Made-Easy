@@ -32,10 +32,8 @@ class StudentModelTestCase(TestCase):
         self.assertEqual(self.student.session, self.session)
         self.assertEqual(self.student.room, self.room)
         self.assertEqual(self.student.studentType, "Undergraduate")
-
     def test_student_str_representation(self):
         self.assertEqual(str(self.student), "Test Student - 1")
-
     def test_student_deletion(self):
         student_count_before_delete = Student.objects.count()
         self.student.delete()
