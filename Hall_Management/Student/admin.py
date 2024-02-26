@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from .models import *
 
 # Register the Student and Session models in the Django admin site

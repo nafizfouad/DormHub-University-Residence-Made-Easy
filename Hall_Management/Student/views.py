@@ -4,8 +4,9 @@ Django views Configuration Documentation
 This module defines various controller files
 """
 from django.shortcuts import render, redirect
+
 from .models import *
-import datetime
+
 
 def student(request):
     """

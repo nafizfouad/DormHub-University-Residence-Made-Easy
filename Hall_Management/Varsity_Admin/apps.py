@@ -2,8 +2,13 @@ from django.apps import AppConfig
 
 
 class VarsityAdminConfig(AppConfig):
-    # A class attribute specifying the default auto field to use for models in the app.
-    default_auto_field = 'django.db.models.BigAutoField'
+    """
+    AppConfig class for configuring the Varsity_Admin app.
 
-    # A class attribute specifying the name of the app.
+    Attributes:
+        default_auto_field (str): Specifies the default auto field to use for models in the app.
+        name (str): Specifies the name of the app.
+    """
+
+    default_auto_field = 'django.db.models.BigAutoField'
     name = 'Varsity_Admin'
