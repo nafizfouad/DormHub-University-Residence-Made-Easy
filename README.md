@@ -88,69 +88,76 @@ Before getting started, ensure you have the following installed on your machine:
 
    python manage.py runserver
    ```
-<!--
+
 # Project Description
 
 ## Overview
 
-Th.
+This is a web application that automates all the managerial function that occurs within a hall/dormitory of a university. Starting from assigning students to dormitories, alloting rooms to each student, swapping rooms as per students' request, keeping logs of all the personnel who enters and leaves a dormitory to deallocating a student when they leave the dormitory, all these events can be handled using this web application. This app offers a centralized platform for efficiently managing all aspects of university hall/dormitory operations. By leveraging technology to automate processes and streamline communication, the system enhances convenience, transparency, and accountability for students, staff, and administrators alike, ultimately contributing to an improved living experience within university halls.
 
 ## Features
 
-### Authentication
+### 1. Hall Creation 
 
-The app incorporates robust authentication to secure user accounts and ensure a personalized experience. 
-There are two types of users who will be using this system:
-- Restaurant Owners
-- Employees
-![Login Page](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Login%20Page.jpg)
-  
-![Signup Page](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Signup%20Page.jpg)
+Administrators can create and manage halls within the system, defining the capacity, amenities, and other relevant details.
 
-### Restaurant Management
+### 2. Student Management
 
-- **Creating Restaurant:** Administrators/restaurant owners can create new restaurants to participate in the lunch voting process.
-  ![Creating Restaurant](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Creating%20Restaurant.jpg)
-- **Uploading Menu:** Restaurants can upload their menus, showcasing the variety of dishes they offer.
+Hall staff can easily add students to the system, maintaining accurate records of residents and their relevant information.
 
-![Uploading Menu](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Updating%20Menu.jpg)
+### 3. Complaint Management
 
+Students can submit complaints regarding facilities or services through the system, which hall staff can promptly address and resolve.
 
-### Employee Management
+### 4. Service Requests
 
-- **Creating Employee:** New employees can be added to the system, allowing them to participate in the voting process.
- ![Creating Employee Account](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Authentication%20Successful.jpg)
+Students can request various services, such as maintenance or cleaning, through the system, allowing hall staff to efficiently manage and fulfill these requests.
 
+### 5. Online Payment
 
-### Voting Process
+The system facilitates online payment of monthly seat fees, providing students with a convenient and secure method to fulfill their financial obligations.
 
-- **Getting Current Day Menu:** Users can view the menus of participating restaurants for the current day.
-![Available Restaurants](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Available%20restaurants%20with%20menu.jpg)
+### 6. Room Swap Requests
 
-   ![Getting Menu](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Menu.jpg)
-   
-- **Voting for Restaurant Menu:** Employees can cast their votes for their preferred dishes and contribute to the decision-making process.
+Students can request room swaps within the system, specifying their preferences and reasons for the swap.
 
-  ![Voting Process](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Voting%20Process.jpg)
+### 7. Processing Room Swap Requests
 
+Hall staff can review and process room swap requests, considering factors such as availability, preferences, and eligibility.
 
-### Results and Restrictions
+### 8. Room Allocation
 
-- **Getting Results:** The app displays the results of the voting process, revealing the winning restaurant and menu for the day.
-- **Anti-Repetition Rule:** To maintain variety, the winner restaurant is restricted from winning for three consecutive working days.
- 
-![Vote Results](https://github.com/nafizfouad/MenuMinglee/blob/main/Screenshot/Vote%20Count%20of%20a%20particular%20day.jpg)
+The system automates the allocation of rooms to students based on predefined criteria, optimizing occupancy and ensuring fair distribution.
 
-### Logout
+### 9. Visitor Entry Logs
 
-For security and user management, the app includes a logout feature to end user sessions.
+Hall staff can maintain detailed logs of visitor entries, recording information such as visitor identity, purpose of visit, and duration of stay for security and administrative purposes.
+
+## Actors:
+
+### 1. Admin
+
+Manages the system configuration, user permissions, and overall administration, ensuring the smooth functioning of the hall management system.
+
+### 2. Provost
+
+Oversees the overall management of the hall, with access to administrative functionalities for monitoring and decision-making.
+
+### 3. Student
+
+Utilizes the system to manage accommodation-related tasks, such as submitting complaints, requesting services, paying fees, and applying for room swaps.
+
+### 4. Staff
+
+Responsible for day-to-day operations, including adding students, addressing complaints, processing service requests, and managing room allocations.
 
 ## Implementation
 
-The MenuMinglee Web App is implemented using the Django web framework, providing a scalable and maintainable solution. The app features a clean and intuitive interface, making it easy for both administrators and employees to navigate and participate in the lunch voting process.
+The DormHub: University Residence Made Easy Web App is implemented using the Django web framework, providing a scalable and maintainable solution. The app features a clean and intuitive interface, making it easy for all the actors of the system to navigate and use it.
 
+## Wiki Pages
 
--->
+The github wiki pages of this project contains all the documentations on developing the project from scratch. Starting from system requirement specification to app documentation, the wiki pages gives a clear idea on how the project was developed.
 
 Wiki Pages:<br>
 [![Wiki Pages](https://github.com/JU-CSE-27/swe-wiki/blob/master/resources/check-it-out.svg)](https://github.com/JU-CSE-27/swe-wiki/wiki)
