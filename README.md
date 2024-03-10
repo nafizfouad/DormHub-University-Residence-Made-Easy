@@ -105,35 +105,39 @@ Administrators can create and manage halls within the system, defining the capac
 
 Hall staff can easily add students to the system, maintaining accurate records of residents and their relevant information.
 
-### 3. Complaint Management
-
-Students can submit complaints regarding facilities or services through the system, which hall staff can promptly address and resolve.
-
-### 4. Service Requests
-
-Students can request various services, such as maintenance or cleaning, through the system, allowing hall staff to efficiently manage and fulfill these requests.
-
-### 5. Online Payment
-
-The system facilitates online payment of monthly seat fees, providing students with a convenient and secure method to fulfill their financial obligations.
-
-### 6. Room Swap Requests
-
-Students can request room swaps within the system, specifying their preferences and reasons for the swap.
-
-### 7. Processing Room Swap Requests
-
-Hall staff can review and process room swap requests, considering factors such as availability, preferences, and eligibility.
-
-### 8. Room Allocation
+### 3. Room Allocation
 
 The system automates the allocation of rooms to students based on predefined criteria, optimizing occupancy and ensuring fair distribution.
 
-### 9. Visitor Entry Logs
+### 4. Complaint Management
+
+Students can submit complaints regarding facilities or services through the system, which hall staff can promptly address and resolve.
+
+### 5. Service Requests
+
+Students can request various services, such as maintenance or cleaning, through the system, allowing hall staff to efficiently manage and fulfill these requests.
+
+### 6. Notify for Upcoming Due Payment
+
+The system provides a feature to notify students of upcoming due payments, ensuring timely reminders to avoid any delays or missed payments. This proactive approach helps students manage their finances effectively and maintain compliance with hall regulations.
+
+### 7. Online Payment
+
+The system facilitates online payment of monthly seat fees, providing students with a convenient and secure method to fulfill their financial obligations.
+
+### 8. Room Swap Requests
+
+Students can request room swaps within the system, specifying their preferences and reasons for the swap.
+
+### 9. Processing Room Swap Requests
+
+Hall staff can review and process room swap requests, considering factors such as availability, preferences, and eligibility.
+
+### 10. Visitor Entry Logs
 
 Hall staff can maintain detailed logs of visitor entries, recording information such as visitor identity, purpose of visit, and duration of stay for security and administrative purposes.
 
-## Actors:
+## Actors
 
 ### 1. Admin
 
